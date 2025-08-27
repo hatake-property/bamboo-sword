@@ -16,6 +16,20 @@
 </head>
 
 <body>
+	<canvas id="canvas"></canvas>
+	<script>
+		document.addEventListener('load', () => {
+			const canvas = document.getElementById('canvas');
+			canvas.height = window.innerHeight;
+			canvas.width = window.innerWidth;
+		});
+
+		document.addEventListener('resize', () => {
+			const canvas = document.getElementById('canvas');
+			canvas.height = window.innerHeight;
+			canvas.width = window.innerWidth;
+		});
+	</script>
 </body>
 
 </html>
